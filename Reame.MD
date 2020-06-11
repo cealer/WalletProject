@@ -1,0 +1,1 @@
+ coverlet .\UnitsTest\bin\Debug\netcoreapp3.1\UnitsTest.dll --target "dotnet" --targetargs "test ./UnitsTest --no-build"

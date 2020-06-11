@@ -1,0 +1,1204 @@
+{
+  "Wallet.Domain.dll": {
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\SeedWork\\Entity.cs": {
+      "Wallet.Domain.SeedWork.Entity": {
+        "System.Int32 Wallet.Domain.SeedWork.Entity::get_Id()": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.SeedWork.Entity::set_Id(System.Int32)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IReadOnlyCollection`1<MediatR.INotification> Wallet.Domain.SeedWork.Entity::get_DomainEvents()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.SeedWork.Entity::AddDomainEvent(MediatR.INotification)": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 28,
+              "Offset": 9,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.SeedWork.Entity::RemoveDomainEvent(MediatR.INotification)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 8,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.SeedWork.Entity::ClearDomainEvents()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 8,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Wallet.Domain.SeedWork.Entity::IsTransient()": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean Wallet.Domain.SeedWork.Entity::Equals(System.Object)": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 2,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 21,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 33,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 60,
+              "EndOffset": 66,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 79,
+              "EndOffset": 81,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 79,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 94,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 94,
+              "EndOffset": 100,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 Wallet.Domain.SeedWork.Entity::GetHashCode()": {
+          "Lines": {
+            "67": 1,
+            "68": 1,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "76": 1,
+            "78": 1
+          },
+          "Branches": [
+            {
+              "Line": 68,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 31,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 12,
+              "EndOffset": 75,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean Wallet.Domain.SeedWork.Entity::op_Equality(Wallet.Domain.SeedWork.Entity,Wallet.Domain.SeedWork.Entity)": {
+          "Lines": {
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "84": 0,
+            "85": 0
+          },
+          "Branches": [
+            {
+              "Line": 81,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 19,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 10,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Wallet.Domain.SeedWork.Entity::op_Inequality(Wallet.Domain.SeedWork.Entity,Wallet.Domain.SeedWork.Entity)": {
+          "Lines": {
+            "88": 0,
+            "89": 0,
+            "90": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\SeedWork\\Enumeration.cs": {
+      "Wallet.Domain.SeedWork.Enumeration": {
+        "System.String Wallet.Domain.SeedWork.Enumeration::get_Name()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.Int32 Wallet.Domain.SeedWork.Enumeration::get_Id()": {
+          "Lines": {
+            "12": 5
+          },
+          "Branches": []
+        },
+        "System.String Wallet.Domain.SeedWork.Enumeration::ToString()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<T> Wallet.Domain.SeedWork.Enumeration::GetAll()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 26,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Wallet.Domain.SeedWork.Enumeration::Equals(System.Object)": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 33,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 14,
+              "EndOffset": 21,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 Wallet.Domain.SeedWork.Enumeration::GetHashCode()": {
+          "Lines": {
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Wallet.Domain.SeedWork.Enumeration::AbsoluteDifference(Wallet.Domain.SeedWork.Enumeration,Wallet.Domain.SeedWork.Enumeration)": {
+          "Lines": {
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "T Wallet.Domain.SeedWork.Enumeration::FromValue(System.Int32)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        },
+        "T Wallet.Domain.SeedWork.Enumeration::FromDisplayName(System.String)": {
+          "Lines": {
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0
+          },
+          "Branches": []
+        },
+        "T Wallet.Domain.SeedWork.Enumeration::Parse(K,System.String,System.Func`2<T,System.Boolean>)": {
+          "Lines": {
+            "63": 0,
+            "64": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0
+          },
+          "Branches": [
+            {
+              "Line": 66,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 24,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 Wallet.Domain.SeedWork.Enumeration::CompareTo(System.Object)": {
+          "Lines": {
+            "72": 1
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.SeedWork.Enumeration::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "14": 3,
+            "15": 3,
+            "16": 3,
+            "17": 3,
+            "18": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\SeedWork\\ValueObject.cs": {
+      "Wallet.Domain.SeedWork.ValueObject": {
+        "System.Boolean Wallet.Domain.SeedWork.ValueObject::EqualOperator(Wallet.Domain.SeedWork.ValueObject,Wallet.Domain.SeedWork.ValueObject)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": [
+            {
+              "Line": 10,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 10,
+              "Offset": 12,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 20,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Wallet.Domain.SeedWork.ValueObject::NotEqualOperator(Wallet.Domain.SeedWork.ValueObject,Wallet.Domain.SeedWork.ValueObject)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Wallet.Domain.SeedWork.ValueObject::Equals(System.Object)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 2,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 26,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 167,
+              "EndOffset": 70,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 94,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 94,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 108,
+              "EndOffset": 132,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 137,
+              "EndOffset": 139,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 137,
+              "EndOffset": 145,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 152,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 152,
+              "EndOffset": 162,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 167,
+              "EndOffset": 169,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 175,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 175,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 Wallet.Domain.SeedWork.ValueObject::GetHashCode()": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 13,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 49,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "Wallet.Domain.SeedWork.ValueObject Wallet.Domain.SeedWork.ValueObject::GetCopy()": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0
+          },
+          "Branches": []
+        }
+      },
+      "Wallet.Domain.SeedWork.ValueObject/<>c": {
+        "System.Int32 Wallet.Domain.SeedWork.ValueObject/<>c::<GetHashCode>b__4_0(System.Object)": {
+          "Lines": {},
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 1,
+              "EndOffset": 3,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 1,
+              "EndOffset": 6,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\Exceptions\\WalletDomainException .cs": {
+      "Wallet.Domain.Exceptions.WalletDomainException": {
+        "System.Void Wallet.Domain.Exceptions.WalletDomainException::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.Exceptions.WalletDomainException::.ctor(System.String)": {
+          "Lines": {
+            "11": 7,
+            "12": 14
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.Exceptions.WalletDomainException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\Events\\PaymentCreatedDomainEvent.cs": {
+      "Wallet.Domain.Events.PaymentCreatedDomainEvent": {
+        "System.String Wallet.Domain.Events.PaymentCreatedDomainEvent::get_UserId()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Wallet.Domain.Events.PaymentCreatedDomainEvent::get_Amount()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.Events.PaymentCreatedDomainEvent::.ctor(System.String,System.Decimal)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\AggregatesModel\\WalletAggregate\\Wallet.cs": {
+      "Wallet.Domain.AggregatesModel.WalletAggregate.Wallet": {
+        "System.String Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::get_UserId()": {
+          "Lines": {
+            "10": 11
+          },
+          "Branches": []
+        },
+        "System.Decimal Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::get_Balance()": {
+          "Lines": {
+            "12": 36
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Wallet.Domain.AggregatesModel.DepositAggregate.Deposit> Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::get_Deposits()": {
+          "Lines": {
+            "14": 12
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::IncreaseBalance(System.Decimal)": {
+          "Lines": {
+            "28": 11,
+            "29": 11,
+            "30": 9,
+            "31": 9
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::DecreaseBalance(System.Decimal)": {
+          "Lines": {
+            "34": 4,
+            "35": 4,
+            "37": 2,
+            "38": 1,
+            "39": 1,
+            "42": 1,
+            "44": 1
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 23,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::ValidateAmount(System.Decimal)": {
+          "Lines": {
+            "47": 18,
+            "48": 18,
+            "49": 6,
+            "50": 6,
+            "52": 12
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 48,
+              "Offset": 14,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::AddDeposit(System.Decimal)": {
+          "Lines": {
+            "55": 3,
+            "56": 3,
+            "57": 1,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::.ctor()": {
+          "Lines": {
+            "16": 11,
+            "17": 11,
+            "18": 11,
+            "19": 11,
+            "20": 11
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.WalletAggregate.Wallet::.ctor(System.String)": {
+          "Lines": {
+            "22": 11,
+            "23": 11,
+            "24": 11,
+            "25": 11
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 15,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 11
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\AggregatesModel\\WalletAggregate\\Deposit.cs": {
+      "Wallet.Domain.AggregatesModel.DepositAggregate.Deposit": {
+        "System.Decimal Wallet.Domain.AggregatesModel.DepositAggregate.Deposit::get_Amount()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        },
+        "System.DateTime Wallet.Domain.AggregatesModel.DepositAggregate.Deposit::get_Date()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.DepositAggregate.Deposit::.ctor(System.Decimal)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\AggregatesModel\\PaymentAggregate\\Payment.cs": {
+      "Wallet.Domain.AggregatesModel.PaymentAggregate.Payment": {
+        "System.String Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::get_UserId()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.Decimal Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::get_Amount()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.DateTime Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::get_Date()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::get_TypePayment()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::AddAmountWallet()": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.PaymentAggregate.Payment::.ctor(System.String,System.Decimal,Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 15,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 47,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 81,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 81,
+              "EndOffset": 94,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Cesar\\source\\repos\\Wallet\\Wallet.Domain\\AggregatesModel\\PaymentAggregate\\TypePayment.cs": {
+      "Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment": {
+        "System.Collections.Generic.IEnumerable`1<Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment> Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment::List()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment::FromName(System.String)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 43,
+              "EndOffset": 45,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 67,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 43,
+              "EndOffset": 113,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment::From(System.Int32)": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "45": 0,
+            "46": 0
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 43,
+              "EndOffset": 45,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 67,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 43,
+              "EndOffset": 113,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "16": 3,
+            "17": 3,
+            "18": 3
+          },
+          "Branches": []
+        },
+        "System.Void Wallet.Domain.AggregatesModel.PaymentAggregate.TypePayment::.cctor()": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
