@@ -9,7 +9,7 @@ namespace WalletService.API.Application.Queries
 {
     public class WalletQueries : IWalletQueries
     {
-        private string _connectionString = string.Empty;
+        private readonly string _connectionString = string.Empty;
 
         public WalletQueries(string constr)
         {

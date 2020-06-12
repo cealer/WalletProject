@@ -1,55 +1,62 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Net;
 using System.Threading.Tasks;
+using WalletService.API.Application.Commands.PaymentCommands;
+using WalletService.API.Application.Queries.PaymentQueries;
+using WalletService.API.Extensions;
 
 namespace WalletService.API.Controllers
 {
-    public class PaymentsController 
-        //: ApiController
+    public class PaymentsController : ApiController
     {
-        //private readonly IWalletQueries _walletQueries;
-        //private readonly ILogger<WalletsController> _logger;
+        private readonly IPaymentQueries _paymentQueries;
+        private readonly ILogger<PaymentsController> _logger;
 
-        //public WalletsController(IWalletQueries walletQueries, ILogger<WalletsController> logger)
-        //{
-        //    _walletQueries = walletQueries ?? throw new ArgumentNullException(nameof(walletQueries));
-        //    _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        //}
+        public PaymentsController(IPaymentQueries paymentQueries, ILogger<PaymentsController> logger)
+        {
+            _paymentQueries = paymentQueries ?? throw new ArgumentNullException(nameof(paymentQueries));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
 
-        //[Route("{walletId:Guid}")]
-        //[HttpGet]
-        //[ProducesResponseType(typeof(WalletViewModel), (int)HttpStatusCode.OK)]
-        //[ProducesResponseType((int)HttpStatusCode.NotFound)]
-        //public async Task<ActionResult> GetOrderAsync(Guid walletId)
-        //{
-        //    try
-        //    {
-        //        //Todo: It's good idea to take advantage of GetOrderByIdQuery and handle by GetCustomerByIdQueryHandler
-        //        //var order customer = await _mediator.Send(new GetOrderByIdQuery(orderId));
-        //        var order = await _walletQueries.GetWalletAsync(walletId);
+        [Route("{userId:Guid}")]
+        [HttpGet]
+        [ProducesResponseType(typeof(PaymentViewModels), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        public async Task<ActionResult> GetOrderAsync(Guid userId)
+        {
+            try
+            {
+                //Todo: It's good idea to take advantage of GetOrderByIdQuery and handle by GetCustomerByIdQueryHandler
+                //var order customer = await _mediator.Send(new GetOrderByIdQuery(orderId));
+                var order = await _paymentQueries.GetPaymentsByUserIdAsync(userId);
 
-        //        return Ok(order);
-        //    }
-        //    catch
-        //    {
-        //        return NotFound();
-        //    }
-        //}
+                return Ok(order);
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
 
-        //[HttpPost]
-        //public async Task<ActionResult<bool>> CreateWalletAsync([FromBody] CreateWalletCommand createWalletCommand)
-        //{
-        //    _logger.LogInformation(
-        //        "----- Sending command: {CommandName} - {IdProperty}: {CommandId} ({@Command})",
-        //        createWalletCommand.GetGenericTypeName(),
-        //        nameof(createWalletCommand.UserId),
-        //        createWalletCommand.UserId,
-        //        createWalletCommand);
+        [HttpPost]
+        public async Task<ActionResult<bool>> CreateWalletAsync([FromBody] CreatePaymentCommand createPaymentCommand)
+        {
+            _logger.LogInformation(
+                "----- Sending command: {CommandName} - {IdProperty}: {CommandId} ({@Command})",
+                createPaymentCommand.GetGenericTypeName(),
+                nameof(createPaymentCommand.UserId),
+                createPaymentCommand.UserId,
+                createPaymentCommand);
 
-        //    return await Mediator.Send(createWalletCommand);
-        //}
+            var result = await Mediator.Send(createPaymentCommand);
+            if (result)
+            {
+                return Ok();
+            }
+            return StatusCode(500, new { error = "Deposit can't be created." });
+        }
 
     }
 }

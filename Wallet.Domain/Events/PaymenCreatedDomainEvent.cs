@@ -1,17 +1,16 @@
 ﻿using MediatR;
 using System;
-using WalletService.Service.Domain.AggregatesModel.PaymentAggregate;
 
 namespace WalletService.Service.Domain.Events
 {
     public class PaymenCreatedDomainEvent : INotification
     {
-        public Guid UserId { get; }
+        public Guid WalletId { get; }
         public decimal Amount { get; }
 
-        public PaymenCreatedDomainEvent(Guid userId, decimal amount)
+        public PaymenCreatedDomainEvent(Guid walletId, decimal amount)
         {
-            UserId = userId;
+            WalletId = walletId;
             Amount = amount;
         }
     }

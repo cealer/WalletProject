@@ -1,14 +1,10 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using WalletService.API.Application.Commands.IdentifiedCommands;
 using WalletService.API.Application.Exceptions;
-using WalletService.Domain.AggregatesModel.WalletAggregate;
 using WalletService.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Infrastructure.Idempotency;

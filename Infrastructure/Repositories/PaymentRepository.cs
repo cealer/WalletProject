@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using WalletService.Domain.AggregatesModel.PaymentAggregate;
 using WalletService.Service.Domain.AggregatesModel.PaymentAggregate;
@@ -51,7 +49,7 @@ namespace WalletService.Service.Infrastructure.Repositories
         {
             var payment = await _context.Payments
                    .Where(b => b.Id == PaymentId)
-                   .SingleOrDefaultAsync();
+                   .FirstOrDefaultAsync();
 
             return payment;
         }
@@ -60,7 +58,7 @@ namespace WalletService.Service.Infrastructure.Repositories
         {
             var payment = await _context.Payments
                    .Where(b => b.GetWalletId == WalletId)
-                   .SingleOrDefaultAsync();
+                   .FirstOrDefaultAsync();
             return payment;
         }
 

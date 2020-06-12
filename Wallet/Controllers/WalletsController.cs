@@ -76,7 +76,7 @@ namespace WalletService.API.Controllers
             {
                 return Ok();
             }
-            return StatusCode(500,new { error= "Deposit can't be created." });
+            return StatusCode(500, new { error = "Deposit can't be created." });
         }
 
     }

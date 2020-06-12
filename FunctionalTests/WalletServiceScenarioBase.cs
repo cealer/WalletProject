@@ -3,13 +3,8 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using WalletService.Application;
 using WalletService.Application.Extensions;
 using WalletService.Application.Infrastructure;
@@ -26,7 +21,7 @@ namespace FunctionalTests
 
             var hostBuilder = new WebHostBuilder()
                 .UseContentRoot(Path.GetDirectoryName(path))
-                .ConfigureAppConfiguration((r,cb) =>
+                .ConfigureAppConfiguration((r, cb) =>
                 {
                     cb.AddJsonFile("appsettings.json", optional: false)
                     .AddEnvironmentVariables();

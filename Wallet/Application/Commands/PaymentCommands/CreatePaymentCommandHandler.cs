@@ -1,16 +1,12 @@
 ﻿using MediatR;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using WalletService.API.Application.Commands.DepositCommands;
 using WalletService.API.Application.Commands.IdentifiedCommands;
+using WalletService.API.Application.Exceptions;
 using WalletService.Domain.AggregatesModel.PaymentAggregate;
-using WalletService.Domain.AggregatesModel.WalletAggregate;
 using WalletService.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Domain.AggregatesModel.PaymentAggregate;
 using WalletService.Service.Infrastructure.Idempotency;
@@ -42,7 +38,7 @@ namespace WalletService.API.Application.Commands.PaymentCommands
 
             if (wallet == null)
             {
-                return false;
+                throw new WalletApplicationException("Wallet not found.");
             }
 
             payment.SetWalletId(wallet.Id);

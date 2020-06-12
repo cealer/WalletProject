@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+using WalletService.Service.Domain.Events;
 using WalletService.Service.Domain.Exceptions;
 using WalletService.Service.Domain.SeedWork;
 
@@ -31,6 +29,12 @@ namespace WalletService.Service.Domain.AggregatesModel.PaymentAggregate
         public void SetWalletId(Guid id)
         {
             _walletId = id;
+            PaymentCreatedDomainEvent(id, Amount);
+        }
+
+        private void PaymentCreatedDomainEvent(Guid walletId, decimal amount)
+        {
+            this.AddDomainEvent(new PaymenCreatedDomainEvent(walletId, amount));
         }
 
     }

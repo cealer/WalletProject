@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
-using WalletService.Domain.AggregatesModel.WalletAggregate;
 using WalletService.Service.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Infrastructure;
 

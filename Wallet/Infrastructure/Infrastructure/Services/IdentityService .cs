@@ -1,15 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WalletService.API.Infrastructure.Infrastructure.Services
 {
     public class IdentityService : IIdentityService
     {
-        private IHttpContextAccessor _context;
+        private readonly IHttpContextAccessor _context;
 
         public IdentityService(IHttpContextAccessor context)
         {

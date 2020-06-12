@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using WalletService.API.Application.Commands.IdentifiedCommands;
 using WalletService.API.Application.Commands.WalletCommands;
 using WalletService.API.Application.Exceptions;
-using WalletService.API.Infrastructure.Infrastructure.Services;
 using WalletService.Domain.AggregatesModel.WalletAggregate;
 using WalletService.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Infrastructure.Idempotency;

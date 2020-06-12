@@ -3,8 +3,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using WalletService.API.Application.Exceptions;
 using WalletService.Domain.AggregatesModel.WalletService.Aggregate;
-using WalletService.Service.Domain.AggregatesModel.WalletService.Aggregate;
 using WalletService.Service.Domain.Events;
 
 namespace WalletService.API.Application.DomainEventHandlers
@@ -21,7 +21,13 @@ namespace WalletService.API.Application.DomainEventHandlers
 
         public async Task Handle(PaymenCreatedDomainEvent notification, CancellationToken cancellationToken)
         {
-            var wallet = await _walletRepository.GetByUserIdAsync(notification.UserId);
+            var wallet = await _walletRepository.GetAsync(notification.WalletId);
+
+            if (wallet == null)
+            {
+                throw new WalletApplicationException("Wallet not found.");
+            }
+
             wallet.DecreaseBalance(notification.Amount);
             await _walletRepository.UnitOfWork.SaveEntitiesAsync();
             _logger.CreateLogger("Payment Proceded succesfull.");

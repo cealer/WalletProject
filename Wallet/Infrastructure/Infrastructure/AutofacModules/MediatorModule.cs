@@ -1,12 +1,8 @@
 ﻿using Autofac;
 using FluentValidation;
 using MediatR;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using WalletService.API.Application.Behaviors;
 using WalletService.API.Application.Commands.DepositCommands;
 using WalletService.API.Application.Commands.PaymentCommands;
