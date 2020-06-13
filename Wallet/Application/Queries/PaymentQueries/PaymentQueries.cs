@@ -25,9 +25,11 @@ namespace WalletService.API.Application.Queries.PaymentQueries
                 var result = await connection.QueryAsync<PaymentViewModels>(
                    @"select p.Amount,p.Date,pm.Name
                      from [wallet_service].[Payments] p
-                     INNER JOIN [wallet_service].[PaymentsMethods] pm
-                     on p.PaymenthMethodId=pm.PaymenthMethodId
-                     WHERE p.UserId=@userId"
+                     INNER JOIN [wallet_service].[PaymentMethod] pm
+                     on p.PaymentMethodId=pm.PaymentMethodId
+                     INNER JOIN [wallet_service].[Wallets] w
+                     on w.WalletId=p._walletId
+                     WHERE w.UserId=@userId"
                         , new { userId }
                     );
 
