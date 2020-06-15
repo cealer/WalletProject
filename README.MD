@@ -1,6 +1,6 @@
 ﻿# Wallet App
 
-The purpose of this project is to practice DDD + CQRS making a wallet app.
+The purpose of this project is to practice DDD + CQRS making a wallet app. Go to https://github.com/cealer/WalletProject/wiki/WalletProject-high-level-system-design to more information.
 
 ### Getting Started 🚀
 
